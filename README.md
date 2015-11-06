@@ -1,7 +1,7 @@
 # Simple-Accordion
 <p>Simple jQuery Accordion Plugin</p>
 <a href="http://codepen.io/gecugamo/pen/xGLyXe">View Demo</a>
-<h3>Getting Started</h3>
+<h4>Getting Started</h4>
 <ol>
     <li>Add the CSS in the <code>head</code> of your document</li>
     <li>Add the JS after jQuery, before the closing <code>body</code> tag of your document</li>
