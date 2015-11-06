@@ -22,7 +22,7 @@
 }
 
 .s_accordion__control:hover,
-.s_accordion__control:active {
+.s_accordion__control.active {
 	border-color: #d0d0d0;
 	background-color: #e2e2e2;
 }
