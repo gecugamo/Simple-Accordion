@@ -9,7 +9,7 @@
     <li>Call the <code>simpleAccordion</code> method on your selector
         <ul>
             <li>
-                <code>$(".s_accordion").simpleAccordion();</code>
+                <code>$(".accordion").simpleAccordion();</code>
             </li>
         </ul>
     </li>

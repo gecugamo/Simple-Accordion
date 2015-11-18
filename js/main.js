@@ -1,3 +1,3 @@
 (function IIFE($) {
-    $('.s_accordion').simpleAccordion();
+    $(".accordion").simpleAccordion();
 })(jQuery);

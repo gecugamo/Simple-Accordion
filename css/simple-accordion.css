@@ -1,14 +1,14 @@
-/********************/
-/* Simple Accordion */
-/********************/
+/*************/
+/* Accordion */
+/*************/
 
 /* Accordion */
-.s_accordion {
+.accordion {
 	margin-bottom: 10px;
 }
 
 /* Accordion Control */
-.s_accordion__control {
+.accordion__control {
 	position: relative;
 	padding: 15px;
 	border: 1px solid #ddd;
@@ -17,22 +17,22 @@
 	font-weight: 700;
 }
 
-.s_accordion__control:not(:first-child) {
+.accordion__control:not(:first-child) {
 	margin-top: 10px;
 }
 
-.s_accordion__control:hover,
-.s_accordion__control.active {
+.accordion__control:hover,
+.accordion__control--active {
 	border-color: #d0d0d0;
 	background-color: #e2e2e2;
 }
 
-.s_accordion__control:hover{
+.accordion__control:hover{
 	cursor: pointer;
 }
 
 /* Plus and Minus Signs */
-.s_accordion__control > span {
+.accordion__indicator {
 	position: absolute;
 	top: 50%;
 	right: 25px;
@@ -41,18 +41,18 @@
 }
 
 /* Plus */
-.s_accordion__control > span::after {
+.accordion__indicator::after {
 	content: '\002B';
 }
 
 /* Minus */
-.s_accordion__control.active > span::after {
+.accordion__control--active .accordion__indicator::after {
 	content: '\002D';
 	font-size: 30px;
 }
 
 /* Accordion Panel */
-.s_accordion__panel {
+.accordion__panel {
 	display: none;
 	margin-bottom: 10px;
 	border-width: 0 1px 1px 1px;
