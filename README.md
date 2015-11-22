@@ -1,6 +1,6 @@
 # Simple-Accordion
 <p>Simple jQuery Accordion Plugin</p>
-<a href="http://codepen.io/gecugamo/pen/xGLyXe">View Demo</a>
+<a href="http://codepen.io/gecugamo/pen/xGLyXe" target="_blank">View Demo</a>
 <h4>Getting Started</h4>
 <ol>
     <li>Add the CSS in the <code>head</code> of your document</li>
