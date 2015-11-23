@@ -1,62 +1,96 @@
+/**********************/
+/** Simple-Accordion **/
+/**********************/
+/**********/
+/** BASE **/
+/**********/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font: 1.6rem/1.4 'Arial', sans-serif;
+}
+
+/* Container */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+@media only screen and (min-width: 990px) {
+  .container {
+    width: 99rem;
+  }
+}
+
 /*************/
 /* Accordion */
 /*************/
-
 /* Accordion */
 .accordion {
-	margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Accordion Control */
 .accordion__control {
-	position: relative;
-	padding: 15px;
-	border: 1px solid #ddd;
-	background-color: #efefef;
-	font-size: 18px;
-	font-weight: 700;
+  position: relative;
+  padding: 1.5rem;
+  border: 0.1rem solid #ddd;
+  background-color: #efefef;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .accordion__control:not(:first-child) {
-	margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .accordion__control:hover,
 .accordion__control--active {
-	border-color: #d0d0d0;
-	background-color: #e2e2e2;
+  border-color: #c4c4c4;
+  background-color: #d6d6d6;
 }
 
-.accordion__control:hover{
-	cursor: pointer;
+.accordion__control:hover {
+  cursor: pointer;
 }
 
 /* Plus and Minus Signs */
 .accordion__indicator {
-	position: absolute;
-	top: 50%;
-	right: 25px;
-	transform: translateY(-50%);
-	font-size: 18px;
+  position: absolute;
+  top: 50%;
+  right: 2.5rem;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
 }
 
 /* Plus */
 .accordion__indicator::after {
-	content: '\002B';
+  content: '\002B';
 }
 
 /* Minus */
 .accordion__control--active .accordion__indicator::after {
-	content: '\002D';
-	font-size: 30px;
+  content: '\002D';
+  font-size: 3rem;
 }
 
 /* Accordion Panel */
 .accordion__panel {
-	display: none;
-	margin-bottom: 10px;
-	border-width: 0 1px 1px 1px;
-	border-style: solid;
-	border-color: #ddd;
-	padding: 20px;
+  display: none;
+  margin-bottom: 1rem;
+  border-width: 0 .1rem .1rem;
+  border-style: solid;
+  border-color: #ddd;
+  padding: 2rem;
 }

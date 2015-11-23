@@ -1,0 +1,110 @@
+/**********************/
+/** Simple-Accordion **/
+/**********************/
+
+// ********* //
+// VARIABLES //
+// ********* //
+
+// Colors
+$lt-grey: #efefef;
+$dk-grey: #ddd;
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-lg: 990px;
+
+/**********/
+/** BASE **/
+/**********/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	font: 1.6rem/1.4 'Arial', sans-serif;
+}
+
+/* Container */
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+
+	@media only screen and (min-width: $breakpoint-lg) {
+		width: 99rem;
+	}
+}
+
+/*************/
+/* Accordion */
+/*************/
+
+/* Accordion */
+.accordion {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* Accordion Control */
+.accordion__control {
+	position: relative;
+	padding: 1.5rem;
+	border: .1rem solid $dk-grey;
+	background-color: $lt-grey;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.accordion__control:not(:first-child) {
+	margin-top: 1rem;
+}
+
+.accordion__control:hover,
+.accordion__control--active {
+	border-color: darken($dk-grey, 10%);
+	background-color: darken($lt-grey, 10%);
+}
+
+.accordion__control:hover{
+	cursor: pointer;
+}
+
+/* Plus and Minus Signs */
+.accordion__indicator {
+	position: absolute;
+	top: 50%;
+	right: 2.5rem;
+	transform: translateY(-50%);
+	font-size: 1.8rem;
+}
+
+/* Plus */
+.accordion__indicator::after {
+	content: '\002B';
+}
+
+/* Minus */
+.accordion__control--active .accordion__indicator::after {
+	content: '\002D';
+	font-size: 3rem;
+}
+
+/* Accordion Panel */
+.accordion__panel {
+	display: none;
+	margin-bottom: 1rem;
+	border-width: 0 .1rem .1rem;
+	border-style: solid;
+	border-color: $dk-grey;
+	padding: 2rem;
+}
